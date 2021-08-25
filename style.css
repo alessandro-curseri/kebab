@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+  color: white;
+}
+hr {
+  background-color: #D2042D;
+  border: none;
+  height: 1px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.details-pappen {
+    text-align: center;
+}
+.title-pappen {
+    font-family: 'Hina Mincho', serif;
+    font-size: 100px;
+    color: #D2042D;
+    margin: 10px 0;
+}
+.subtitle-pappen {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  color: #D2042D;
+}
+
+.panino-img {
+    width: 1000px; 
+    border-radius: 10px;
+}
+.picker {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.picker > div {
+  font-size: large;
+  font-weight:bolder;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  
+}
+.picker > div > hr {
+  opacity: 1;
+  animation-name: ToVisible;
+  animation-duration: .7s;
+}
+.picker > div:hover {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.menu-item > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-item > span {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Hina Mincho', serif;
+}
+.redHr {
+  background-color: #D2042D;
+  border: none;
+  height: 1px;
+  max-width: 420px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', serif;
+}
+.menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.menu-item {
+  margin: 0 auto;
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 21.44px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    height: fit-content;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 7px;
+  user-select: none;
+  background-color: #D2042D;
+  opacity: 0.8;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* Caption text */
+.text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 100px;
+    /* position: absolute; */
+    bottom: 65px;
+    width: 100%;
+}
+.text-author {
+    width: 100%;
+    bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #D2042D;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes ToVisible{
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.slideshow-container-photo {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Make the images invisible by default */
+  .Containers {
+    display: none;
+  }
+  
+  /* forward & Back buttons */
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: #D2042D;
+    opacity: 0.8;
+  }
+  
+  /* Caption Info */
+  .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Worknumbering (1/3 etc) */
+  .MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #D2042D;
+  }
+  .gallery-img {
+    width: auto;
+    height: auto;
+  }
+  /* Faint animation */
+  .fadeGal {
+    -webkit-animation-name: fadeGal;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fadeGal;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fadeGal {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fadeGal {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+.contact-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-ul > li {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
+.contact-ul > li > a {
+  text-decoration: none;
+}
+.contact-ul > li > span, .contact-ul > li > a {
+  font-size: large;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+.contact-ul {
+  padding-left: 0;
+}
+.fas {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #D2042D;
+}
+.time {
+  max-width: 350px;
+}
+.flex-time {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.day {
+  font-weight: 700;
+  font-size: 18px;
+}
+.flex-time > span {
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+.timeHr {
+  background-color: #D2042D;
+  border: none;
+  height: 1px;
+  width: 350px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+footer {
+  height: 130px;
+  position: relative;
+  bottom: 0;
+  background-color: #181818;
+}
+.footer-content {
+  position: relative;
+  top: 30px;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+.developed-by {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  
+}
+.developed-by > a {
+  text-decoration: none;
+  color: #0082e6;
+}
+.links-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+  justify-content: space-between;
+  margin: 20px 5%;
+}
+.home-link {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #D2042D;
+  border-radius: 7px;
+  margin: 0 10px 0 0;
+  padding: 2px 7px;
+  font-family: 'Roboto', serif;
+  font-weight: 800;
+  
+  color: #D2042D;
+}
+.home-link:hover {
+  box-shadow: 0 0 6px rgb(172, 168, 168);
+  transform: scale(1.02);
+}
+a.link {
+  text-decoration: none;
+  color: black;
+}
+.contact-time-hr {
+  display: hidden;
+  flex-basis: 0;
+  width: 0;
+  flex-shrink: 1000px;
+}
+@media(max-width: 700px) {
+  .text {
+    font-size: 20px;
+  }
+
+}
+@media(max-width: 450px) {
+  .title-pappen {
+    font-size: 75px;
+  }
+}
+@media(max-width: 350px) {
+  .timeHr {
+    width: 300px;
+  }
+}
